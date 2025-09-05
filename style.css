@@ -98,7 +98,7 @@ svg {
   display: grid;
   grid: repeat(2, max-content) / repeat(2, max-content);
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 1rem;
   column-gap: 1rem;
 }
 
@@ -140,6 +140,7 @@ svg {
   grid-template-rows: 1fr 1fr;
   padding: 1.3rem;
   gap: 20px;
+  box-shadow: inset #9494946c 0px 3px 5px 0px;
 }
 
 .projects {
