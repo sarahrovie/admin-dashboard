@@ -26,7 +26,7 @@ body {
 }
 
 .sidebar {
-  background-color: skyblue;
+  background-color: #1c94d3;
   padding: 1.3rem 1.3rem 0 1.3rem;
   display: grid;
   align-content: start;
@@ -39,46 +39,102 @@ body {
   gap: 10px;
 }
 
+svg {
+  width: 1.3rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.icon-small,
+.icon-big {
+  border-radius: 50%;
+}
+
+.icon-small {
+  width: 3rem;
+}
+
+.icon-big {
+  width: 4.5rem;
+}
+
 .header {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
   padding: 1.3rem;
 }
 
-.header .search-div {
+.search {
   display: grid;
-  grid-column: 1 / 3;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  gap: 10px;
 }
 
-.search-div input {
-  background-color: lightgray;
-  height: 1.5rem;
-  border-radius: 11px;
+.search input {
+  background-color: #e2e8f0;
+  font-size: 1rem;
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 15px;
   outline: none;
   border: none;
 }
 
-.btns-div {
+.user {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(2, min-content) max-content;
   align-items: center;
-  gap: 20px;
+  justify-content: end;
+  margin-right: 2rem;
+  gap: 2rem;
 }
 
-.btns-div button {
-  background-color: skyblue;
+.user-hi {
+  display: grid;
+  grid: repeat(2, max-content) / repeat(2, max-content);
+  align-items: center;
+  margin-left: 2rem;
+  column-gap: 1rem;
+}
+
+.user-hi img {
+  grid-row: 1 / 3;
+}
+
+.user-hi p {
+  align-self: end;
+}
+
+.user-hi h3 {
+  align-self: start;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.btns button {
+  background-color: #1c94d3;
   color: #fff;
+  font-weight: bold;
   height: 2rem;
-  width: 5rem;
+  width: 6rem;
   border-radius: 20px;
+  margin-right: 2rem;
   border: none;
 }
 
 .main-content {
-  background-color: lightgray;
+  background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
