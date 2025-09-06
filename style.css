@@ -65,7 +65,8 @@ body {
   gap: 1rem;
 }
 
-.list-item svg {
+.list-item svg,
+.card-btns svg {
   width: 1.2rem;
 }
 
@@ -95,7 +96,7 @@ body {
   grid-template-rows: repeat(2, max-content);
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;
-  padding: 1.3rem;
+  padding: 1rem 2rem;
 }
 
 .search {
@@ -186,15 +187,29 @@ body {
   margin-bottom: -10px;
 }
 
-.section-title {
-  font-size: 1.2rem;
-  font-weight: 500;
+.projects .card {
+  border-left: 10px solid #ffa500;
 }
 
 .card {
-  background-color: white;
+  display: grid;
+  align-content: space-around;
+  background-color: #ffffff;
   padding: 1.3rem;
   border-radius: 10px;
+}
+
+.card p {
+  font-size: 0.99rem;
+  color: #4b4b4b;
+}
+
+ul.card-btns {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 2rem;
+  padding: 1rem 1rem 0 0;
 }
 
 .announcements {
