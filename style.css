@@ -174,7 +174,7 @@ body {
   align-items: start;
   padding: 1.3rem;
   gap: 20px;
-  box-shadow: inset #9494946c 0px 3px 5px 0px;
+  box-shadow: inset #a8a8a844 0px 3px 5px 0px;
 }
 
 .projects {
@@ -201,6 +201,7 @@ body {
   background-color: #ffffff;
   padding: 1.3rem;
   border-radius: 10px;
+  box-shadow: #a8a8a844 5px 5px 5px 0px;
 }
 
 .card p {
